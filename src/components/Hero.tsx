@@ -69,7 +69,7 @@ export default function Hero() {
           className="glass mb-6 flex items-center gap-2 rounded-full px-4 py-1.5 font-mono-tight text-[11px] uppercase text-[var(--color-mist)]"
         >
           <span className="h-1.5 w-1.5 rounded-full bg-[var(--color-cyan)]" />
-          Rajalakshmi Engineering College - Annual Report 2025-2026
+          Rajalakshmi Engineering College
         </motion.span>
 
         <motion.h1
@@ -82,8 +82,8 @@ export default function Hero() {
         </motion.h1>
 
         <motion.p variants={item} className="mt-8 max-w-xl text-base leading-relaxed text-[var(--color-mist)] sm:text-lg">
-          Intellexa REC brings students together through learning sessions, Renaissance, December Learnathon,
-          and Titanium 26, building a year of hands-on technology, creativity, and collaboration.
+          Intellexa REC is a technical club that organizes events, workshops, and
+          activities to help students learn, explore emerging technologies, and thrive in their technical journey.
         </motion.p>
 
         <motion.div variants={item} className="mt-10 flex flex-wrap items-center gap-4">
@@ -108,7 +108,6 @@ export default function Hero() {
           <span className="h-1 w-1 rounded-full bg-[var(--color-mist-dim)]" />
           <span>5 TITANIUM EVENTS</span>
           <span className="hidden h-1 w-1 rounded-full bg-[var(--color-mist-dim)] sm:block" />
-          <span className="hidden sm:block">2025-2026 REPORT</span>
         </motion.div>
       </motion.div>
 

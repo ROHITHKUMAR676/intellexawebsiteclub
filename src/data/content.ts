@@ -6,7 +6,6 @@ export const navItems = [
   { label: "Achievements", href: "#achievements" },
   { label: "Blogs", href: "#blogs" },
   { label: "Members", href: "#members" },
-  { label: "Contact", href: "#contact" },
 ];
 
 export const aboutCards = [
@@ -164,9 +163,9 @@ export const achievements = [
 ];
 
 export const executiveRoles = [
-  { role: "President", name: "AFRA" },
-  { role: "Vice President", name: "SARVESH" },
-  { role: "Technical Lead", name: "DHARSSHINI" },
+  { role: "President", name: "Afra Zeenath Fathima" },
+  { role: "Vice President", name: "Sarvesh Sivasankaran" },
+  { role: "Technical Lead", name: "Darsshini P" },
   { role: "Secretary", name: "Andralyn Sweety" },
 ];
 
@@ -191,15 +190,15 @@ export const domainTeams = [
   },
   {
     domain: "Creative",
-    lead: "SAM",
+    lead: "Sam",
     coLead: "Nithin R",
     members: ["Kaaviya Sri PS", "Varsha"],
   },
   {
     domain: "Design",
-    lead: "SHERIN",
+    lead: "Sherin",
     coLead: "Tamilselvan",
-    members: ["Shajith", "Thiagarajan", "Eathisha"],
+    members: ["Thiagarajan", "Eathisha"],
   },
   {
     domain: "DSA",
@@ -209,7 +208,7 @@ export const domainTeams = [
   },
   {
     domain: "Event",
-    lead: "Sangita (BIC)",
+    lead: "Sangita",
     coLead: "Lakshana",
     members: ["Vijayalakshmi", "Mithul"],
   },
@@ -227,13 +226,13 @@ export const domainTeams = [
   },
   {
     domain: "Media",
-    lead: "SREYA",
-    coLead: "RA Karthikha",
-    members: ["Rahul M A", "Darshan S", "Dhanush"],
+    lead: "RA Karthikha",
+    coLead: "Darshan S",
+    members: ["Rahul M A", "Dhanush"],
   },
   {
     domain: "PR",
-    lead: "SHERWIN",
+    lead: "Sherwin",
     coLead: "Arya MR",
     members: ["Mahesh D"],
   },

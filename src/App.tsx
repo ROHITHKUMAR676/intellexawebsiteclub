@@ -27,12 +27,11 @@ export default function App() {
           <main>
             <Hero />
             <About />
-            <History />
             <Events />
+            <History />
             <Achievements />
             <Blogs />
             <Members />
-            <Contact />
           </main>
           <Footer />
         </>
