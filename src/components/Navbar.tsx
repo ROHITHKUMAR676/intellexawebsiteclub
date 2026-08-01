@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import intellexaLogo from "../assets/Intellexa-Logo.png";
 import { navItems } from "../data/content";
 
 export default function Navbar() {
@@ -57,12 +58,14 @@ export default function Navbar() {
           href="#home"
           data-cursor="link"
           onClick={(e) => handleClick(e, "#home")}
-          className="visible-focus flex items-center gap-2 font-[var(--font-display)] text-sm font-semibold tracking-tight sm:text-base"
+          className="visible-focus flex h-16 w-52 items-center justify-center overflow-hidden"
+          aria-label="Intellexa home"
         >
-          <span className="orbit-ring flex h-7 w-7 items-center justify-center">
-            <span className="h-1.5 w-1.5 rounded-full bg-[var(--color-cyan)]" />
-          </span>
-          INTELLEXA
+          <img
+            src={intellexaLogo}
+            alt="Intellexa"
+            className="h-16 w-52 object-cover object-[50%_49%]"
+          />
         </a>
 
         <ul className="hidden items-center gap-1 md:flex">

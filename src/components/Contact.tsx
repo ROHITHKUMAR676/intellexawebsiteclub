@@ -24,14 +24,14 @@ export default function Contact() {
             Have an idea? <span className="text-gradient">Bring it to the lab.</span>
           </h2>
           <p className="mt-5 max-w-md text-[var(--color-mist)]">
-            Whether you want to join a pod, propose a collaboration, or just ask what we're building this
-            semester — we read everything that comes through.
+            Whether you want to join a domain, propose a session, collaborate on an event, or take part in the
+            next program, we read everything that comes through.
           </p>
 
           <div className="mt-10 flex flex-col gap-5">
             <ContactRow label="Email" value="intellexa@rajalakshmi.edu.in" />
             <ContactRow label="Location" value="Innovation Lab, REC Campus, Chennai" />
-            <ContactRow label="Hours" value="Build Nights — every Friday, 5–9 PM" />
+            <ContactRow label="Programs" value="Learning sessions, showcases, and technical events" />
           </div>
 
           <div className="mt-10 flex gap-3">
@@ -72,7 +72,7 @@ export default function Contact() {
                   <textarea
                     required
                     rows={4}
-                    placeholder="Tell us what you're building, or want to."
+                    placeholder="Tell us what you want to learn, build, or organize."
                     className="visible-focus resize-none rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-[var(--color-ink)] outline-none transition-colors placeholder:text-[var(--color-mist-dim)] focus:border-[var(--color-electric)]"
                   />
                 </div>

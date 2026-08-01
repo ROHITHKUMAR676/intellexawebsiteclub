@@ -69,21 +69,21 @@ export default function Hero() {
           className="glass mb-6 flex items-center gap-2 rounded-full px-4 py-1.5 font-mono-tight text-[11px] uppercase text-[var(--color-mist)]"
         >
           <span className="h-1.5 w-1.5 rounded-full bg-[var(--color-cyan)]" />
-          Rajalakshmi Engineering College · Technical Innovation Club
+          Rajalakshmi Engineering College - Annual Report 2025-2026
         </motion.span>
 
         <motion.h1
           variants={item}
           className="max-w-4xl font-[var(--font-display)] text-[13vw] font-semibold leading-[0.95] tracking-tight sm:text-7xl md:text-8xl"
         >
-          Where ideas
+          Innovate.
           <br />
-          become <span className="text-gradient">working things</span>
+          Impact. <span className="text-gradient">Inspire.</span>
         </motion.h1>
 
         <motion.p variants={item} className="mt-8 max-w-xl text-base leading-relaxed text-[var(--color-mist)] sm:text-lg">
-          INTELLEXA is the student community at REC turning late-night ideas into hackathon wins, published
-          research, and hardware you can hold. Create. Innovate. Impact.
+          Intellexa REC brings students together through learning sessions, Renaissance, December Learnathon,
+          and Titanium 26, building a year of hands-on technology, creativity, and collaboration.
         </motion.p>
 
         <motion.div variants={item} className="mt-10 flex flex-wrap items-center gap-4">
@@ -99,16 +99,16 @@ export default function Hero() {
             onClick={() => scrollTo("#events")}
             className="visible-focus rounded-full border border-white/15 px-7 py-3.5 text-sm font-medium text-[var(--color-ink)] transition-colors hover:border-white/40"
           >
-            See what we build →
+            See the events
           </button>
         </motion.div>
 
         <motion.div variants={item} className="mt-16 flex items-center gap-8 font-mono-tight text-xs text-[var(--color-mist-dim)] sm:gap-12">
-          <span>150+ MEMBERS</span>
+          <span>20+ PROGRAMS</span>
           <span className="h-1 w-1 rounded-full bg-[var(--color-mist-dim)]" />
-          <span>18 HACKATHON WINS</span>
+          <span>5 TITANIUM EVENTS</span>
           <span className="hidden h-1 w-1 rounded-full bg-[var(--color-mist-dim)] sm:block" />
-          <span className="hidden sm:block">EST. 2019</span>
+          <span className="hidden sm:block">2025-2026 REPORT</span>
         </motion.div>
       </motion.div>
 

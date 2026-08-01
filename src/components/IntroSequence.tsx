@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import intellexaLogo from "../assets/Intellexa-Logo.png";
 
 const TAGLINE = ["Create", "Innovate", "Impact"];
 
@@ -86,18 +87,18 @@ export default function IntroSequence({ onDone }: { onDone: () => void }) {
               <span className="h-2 w-2 rounded-full bg-[var(--color-cyan)] shadow-[0_0_18px_rgba(56,226,255,0.9)]" />
             </motion.div>
 
-            <motion.div
-              className="font-[var(--font-display)] text-[clamp(2.6rem,9vw,6rem)] font-semibold leading-none text-white drop-shadow-[0_0_36px_rgba(255,255,255,0.2)]"
-              initial={{ opacity: 0, y: 18, letterSpacing: "0.3em" }}
+            <motion.img
+              src={intellexaLogo}
+              alt="Intellexa"
+              className="w-[min(78vw,560px)] object-contain drop-shadow-[0_0_36px_rgba(255,255,255,0.18)]"
+              initial={{ opacity: 0, y: 18, scale: 0.94 }}
               animate={{
                 opacity: revealed ? 1 : 0,
                 y: revealed ? 0 : 18,
-                letterSpacing: revealed ? "0.02em" : "0.3em",
+                scale: revealed ? 1 : 0.94,
               }}
               transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            >
-              INTELLEXA
-            </motion.div>
+            />
 
             <div className="mt-5 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 font-mono-tight text-[10px] uppercase text-white/65 sm:text-xs">
               {TAGLINE.map((word, index) => (

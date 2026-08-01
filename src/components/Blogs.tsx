@@ -124,12 +124,12 @@ export default function Blogs() {
           transition={{ duration: 0.8 }}
           className="text-center"
         >
-          <span className="font-mono-tight text-xs uppercase text-[var(--color-electric)]">From the lab</span>
+          <span className="font-mono-tight text-xs uppercase text-[var(--color-electric)]">From the report</span>
           <h2 className="mt-4 font-[var(--font-display)] text-4xl font-semibold tracking-tight sm:text-5xl">
-            Notes, builds <span className="text-gradient">and postmortems</span>
+            Event notes <span className="text-gradient">and highlights</span>
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-[var(--color-mist)]">
-            Short write-ups from members on what we built, what broke, and what we'd do differently.
+            Recaps adapted from the Intellexa REC 2025-2026 magazine and annual report.
           </p>
         </motion.div>
 

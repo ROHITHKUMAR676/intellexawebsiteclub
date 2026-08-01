@@ -39,11 +39,11 @@ export default function About() {
         >
           <span className="font-mono-tight text-xs uppercase text-[var(--color-electric)]">About the club</span>
           <h2 className="mt-4 font-[var(--font-display)] text-4xl font-semibold tracking-tight sm:text-5xl">
-            A community built around <span className="text-gradient">making, not talking</span>.
+            A year built around <span className="text-gradient">learning by doing</span>.
           </h2>
           <p className="mt-5 text-[var(--color-mist)]">
-            INTELLEXA exists for one reason: to give REC students a place to build things that don't fit inside a
-            syllabus. No membership fee, no gatekeeping — just a lab, a community, and a habit of shipping.
+            Intellexa REC's 2025-2026 report captures a calendar of practical sessions, showcases, and competitions
+            shaped around curiosity, peer learning, and real-world problem solving.
           </p>
         </motion.div>
 

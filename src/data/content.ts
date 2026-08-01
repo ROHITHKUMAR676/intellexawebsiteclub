@@ -12,166 +12,154 @@ export const navItems = [
 export const aboutCards = [
   {
     icon: "spark",
-    title: "What we build",
-    body: "Working prototypes over slide decks. Every project INTELLEXA ships starts as a rough idea on a whiteboard and ends as something people can actually use.",
+    title: "What we run",
+    body: "Learning sessions, launch events, hackathons, technical contests, and creative challenges that help REC students turn curiosity into practice.",
   },
   {
     icon: "orbit",
-    title: "How we work",
-    body: "Small pods, fast iteration, senior members mentoring juniors one build at a time. No hierarchy for the sake of it — just people shipping together.",
+    title: "How we learn",
+    body: "Hands-on formats come first: local AI with Ollama, Docker demos, Linux labs, FlutterFlow builds, IoT simulations, and live project showcases.",
   },
   {
     icon: "signal",
-    title: "Who it's for",
-    body: "Any REC student curious enough to open a terminal, a CAD file, or a circuit sim and figure out how something works — no prior experience required.",
+    title: "Who joins",
+    body: "Students who want to explore emerging technologies, build practical skills, pitch better, compete with confidence, and create real-world impact.",
   },
 ];
 
 export const aboutStats = [
-  { value: 2400, suffix: "+", label: "Students reached" },
-  { value: 63, suffix: "", label: "Projects shipped" },
-  { value: 18, suffix: "", label: "Hackathon wins" },
-  { value: 7, suffix: "", label: "Years running" },
+  { value: 28, suffix: "", label: "Report pages" },
+  { value: 20, suffix: "+", label: "Programs logged" },
+  { value: 5, suffix: "", label: "Titanium events" },
+  { value: 2026, suffix: "", label: "Current cycle" },
 ];
 
 export const historyMilestones = [
   {
-    year: "2019",
-    title: "Six people, one lab bench",
+    year: "Apr 2025",
+    title: "Curiosity Lab project expo",
     description:
-      "INTELLEXA started as an after-hours group of six students meeting in the electronics lab, trading half-finished Arduino projects and bad coffee.",
+      "The Curiosity Lab Wrap-Up and Open Innovation Project Expo closed the initiative with student project showcases, remote evaluation, peer feedback, certificates, and prizes.",
   },
   {
-    year: "2020",
-    title: "Moved online, grew anyway",
+    year: "Aug 2025",
+    title: "Creative and AI sessions",
     description:
-      "The club's first virtual build-nights pulled in members from every department. Attendance tripled in a year nobody expected to grow anything.",
+      "Promptsmiths introduced local language models and custom AI assistants, while Pixel Aura celebrated Photography Day through visual storytelling challenges and an interactive quiz.",
   },
   {
-    year: "2021",
-    title: "First hackathon win",
+    year: "Oct 2025",
+    title: "Docker demystified",
     description:
-      "A three-person team took first place at a regional hackathon with a low-cost soil sensor for smallholder farmers, INTELLEXA's first public recognition.",
+      "A hands-on session helped students understand containers, images, Dockerfiles, Docker Compose, and how modern applications are packaged and deployed consistently.",
   },
   {
-    year: "2022",
-    title: "The club gets a home",
+    year: "2025-26",
+    title: "Renaissance inauguration",
     description:
-      "REC allocated a dedicated innovation lab. Members finally had 24-hour badge access, a laser cutter, and somewhere to leave a project half-built overnight.",
+      "Renaissance launched the Intellexa REC 2025-2026 cycle, introduced the new team, and set a direction around innovation, collaboration, growth, and peer learning.",
   },
   {
-    year: "2023",
-    title: "INTELLEXA Summit, year one",
+    year: "Dec 2025",
+    title: "December Learnathon",
     description:
-      "The club ran its first inter-college tech summit — 40 teams, three tracks, and a closing keynote that ran twenty minutes over because nobody wanted to leave.",
+      "The Learnathon brought beginner-friendly sessions on IoT, FlutterFlow, Linux, computer vision, quantum, automation, networking, pitching, Tailwind, and web launch basics.",
   },
   {
-    year: "2024",
-    title: "Smart India Hackathon finalists",
+    year: "Feb 2026",
+    title: "Titanium 26",
     description:
-      "Two INTELLEXA teams reached the national finals of Smart India Hackathon, competing against 200+ institutions with projects in agri-tech and accessibility.",
-  },
-  {
-    year: "2025",
-    title: "150 active members",
-    description:
-      "Membership crossed 150 for the first time, organized into eight focused pods spanning robotics, applied ML, product design, and embedded systems.",
-  },
-  {
-    year: "2026",
-    title: "Building what's next",
-    description:
-      "This year's roadmap: an open-hardware lending library, a student-run AI research reading group, and INTELLEXA Summit's biggest lineup yet.",
+      "Titanium 26 hosted competitive technical events including IoT Olympics, NETFIX, HackRush, Code and Conquer, and Shark Tank with multi-round challenges and prize pools.",
   },
 ];
 
 export const events = [
   {
-    title: "Ideathon 48",
-    date: "Feb 2026",
-    tag: "Flagship",
+    title: "Curiosity Lab Project Expo",
+    date: "24 Apr 2025",
+    tag: "Project expo",
     description:
-      "A 48-hour sprint from raw idea to working prototype. Cross-department teams, mentor office hours every four hours, and a demo floor open to the whole college.",
+      "A wrap-up and open innovation expo where teams presented project ideas developed through Curiosity Lab, with evaluation on originality, technical depth, innovation, and real-world impact.",
   },
   {
-    title: "Build Nights",
-    date: "Weekly · Fridays",
-    tag: "Recurring",
+    title: "Promptsmiths",
+    date: "14 Aug 2025",
+    tag: "AI session",
     description:
-      "Open lab hours where members bring whatever they're stuck on — code, circuits, CAD — and work through it alongside people who've hit the same wall before.",
+      "Forge Your Own AI introduced language models and Ollama, helping participants run and personalize local AI assistants without cloud infrastructure or high-end GPUs.",
   },
   {
-    title: "INTELLEXA Summit",
-    date: "Aug 2026",
-    tag: "Flagship",
+    title: "Pixel Aura",
+    date: "19 Aug 2025",
+    tag: "Creative event",
     description:
-      "A one-day inter-college summit with talks from founders and engineers, a hardware showcase, and a closing pitch competition judged by industry mentors.",
+      "A Photography Day event with themed photo challenges, a Kahoot quiz, and fundamentals of framing, lighting, perspective, and composition.",
   },
   {
-    title: "ML Bootcamp",
-    date: "Jan 2026",
-    tag: "Workshop series",
+    title: "Docker Demystified",
+    date: "09 Oct 2025",
+    tag: "Tech session",
     description:
-      "Six sessions from tensors to deployed models. Every session ends with something running on a member's own laptop, not just slides about theory.",
+      "A hands-on containerization session covering Docker images, containers, Dockerfiles, Docker Compose, and modern application deployment workflows.",
   },
   {
-    title: "Hardware Sprint",
-    date: "Mar 2026",
-    tag: "Workshop series",
+    title: "Hack the Defense",
+    date: "07 Feb 2026",
+    tag: "Cybersecurity",
     description:
-      "A weekend introduction to PCB design and embedded firmware, ending with every participant taking home a board they etched and flashed themselves.",
+      "A cybersecurity and ethical hacking workshop on threats, vulnerabilities, security testing, cyber defense strategies, and responsible practice.",
   },
   {
-    title: "Alumni Demo Day",
-    date: "Oct 2026",
-    tag: "Community",
+    title: "Titanium 26",
+    date: "12-14 Feb 2026",
+    tag: "Flagship contests",
     description:
-      "Former members return to show what they've built since graduating — startups, research, and the occasional side project that outgrew its origins.",
+      "A multi-event technical series featuring IoT Olympics, NETFIX, HackRush, Code and Conquer, and Shark Tank across hardware, networking, hackathon, backend, and product tracks.",
   },
 ];
 
 export const achievements = [
   {
-    title: "Smart India Hackathon",
-    stat: 2,
-    suffix: "",
-    label: "National finalist teams",
-    description: "Two teams reached the national finals in 2025, competing against entries from over 200 institutions.",
+    title: "Titanium Prize Pools",
+    stat: 95,
+    suffix: "K",
+    label: "Rupees across listed events",
+    description: "IoT Olympics, NETFIX, HackRush, Code and Conquer, and Shark Tank together recorded major prize-backed technical challenges.",
   },
   {
-    title: "Regional Hackathons",
-    stat: 18,
+    title: "Titanium 26",
+    stat: 5,
     suffix: "",
-    label: "First-place finishes",
-    description: "Across state and inter-college hackathons since 2021, INTELLEXA teams have taken first place eighteen times.",
+    label: "Major competitions",
+    description: "The February 2026 series covered IoT, networking, hackathon building, backend debugging, business pitching, data, and product workflows.",
   },
   {
-    title: "Published Research",
+    title: "December Learnathon",
     stat: 9,
     suffix: "",
-    label: "Student papers presented",
-    description: "Member-led papers presented at undergraduate research symposia, spanning robotics, ML, and embedded systems.",
+    label: "Learning sessions",
+    description: "Sessions ranged from AI agents and Tailwind to quantum, automation, IoT, networking, Linux, computer vision, pitching, and web launch basics.",
   },
   {
-    title: "Patents Filed",
-    stat: 3,
+    title: "Offline Learning Sessions",
+    stat: 5,
     suffix: "",
-    label: "Provisional filings",
-    description: "Three provisional patents filed by member teams for hardware developed through club project pods.",
+    label: "Documented workshops",
+    description: "Curiosity Lab, Promptsmiths, Pixel Aura, Docker Demystified, and Hack the Defense anchored the in-person learning calendar.",
   },
   {
-    title: "Community Reach",
-    stat: 2400,
-    suffix: "+",
-    label: "Students engaged",
-    description: "Workshops, bootcamps, and open build-nights have reached students across every department at REC.",
-  },
-  {
-    title: "Industry Recognition",
-    stat: 12,
+    title: "Curiosity Lab Expo",
+    stat: 4,
     suffix: "",
-    label: "Mentor partnerships",
-    description: "Practicing engineers and founders who return each semester to mentor project pods and judge demo days.",
+    label: "Evaluation criteria",
+    description: "Submitted projects were reviewed for originality, technical depth, innovation, and real-world impact before the final showcase.",
+  },
+  {
+    title: "Annual Report",
+    stat: 28,
+    suffix: "",
+    label: "Pages of activities",
+    description: "The 2025-2026 magazine documents board leadership, learning sessions, Renaissance, December Learnathon, and Titanium 26.",
   },
 ];
 
@@ -277,65 +265,59 @@ export const domainTeams = [
 
 export const blogs = [
   {
-    slug: "prototyping-under-48-hours",
-    title: "What we learned prototyping under 48 hours",
-    category: "Build log",
-    date: "Jun 2026",
-    readTime: "6 min read",
-    excerpt:
-      "Ideathon 48 forces every team to compress the usual week-long build cycle into two days. Here's what consistently separates the teams that ship from the ones that don't.",
-    content: [
-      "Every Ideathon 48, we watch roughly forty teams start with the same blank whiteboard and the same forty-eight hours. By the end, some teams have a working demo people can touch, and others have a very polished slide deck. The gap almost never comes down to raw skill.",
-      "The teams that ship start building within the first two hours, even with an incomplete idea. They pick the ugliest, fastest path to something clickable, then spend the remaining time replacing parts of it. Teams that spend the first eight hours 'aligning on the concept' rarely recover the lost runway.",
-      "Scope cutting is the second pattern. The best teams write down every feature they want, then cross out everything that isn't the single core interaction. A soil-moisture sensor project doesn't need a login system or a settings page for a 48-hour demo — it needs one sensor, one reading, and one honest number on a screen.",
-      "Finally, sleep matters more than people expect. Teams that rotate two-hour naps consistently out-execute teams that stay awake the full 48 hours, because debugging with a tired brain takes three times as long as debugging with a rested one.",
-      "None of this is groundbreaking advice. It's just consistently true, hackathon after hackathon — which is exactly why it's worth writing down.",
-    ],
-  },
-  {
-    slug: "soil-sensor-postmortem",
-    title: "Postmortem: the soil sensor that won our first hackathon",
-    category: "Postmortem",
-    date: "Mar 2026",
-    readTime: "8 min read",
-    excerpt:
-      "Back in 2021, a three-person INTELLEXA team built a low-cost soil sensor for smallholder farmers and took first place at a regional hackathon. Here's what actually happened behind the scenes.",
-    content: [
-      "The idea started from a conversation with a farmer near campus who mentioned he was over-watering his fields because he had no way to check soil moisture without digging by hand. That single sentence became the entire brief for the project.",
-      "The first version used a pair of exposed copper probes and a basic voltage divider — cheap, but the probes corroded within days of being left in wet soil. The second version used a capacitive sensor design instead, which solved the corrosion problem and turned out to be more accurate anyway.",
-      "The team's biggest constraint was cost. Off-the-shelf soil sensors ran well beyond what a smallholder farmer could justify spending, so the target was under two dollars per unit in parts. That constraint shaped every decision, right down to using a shared microcontroller board across multiple sensor nodes instead of one per node.",
-      "At the hackathon demo, the judges asked the obvious question: would a real farmer actually use this? The team didn't have a perfect answer, but they had already field-tested a prototype in an actual field for two weeks before the event, which is what set the project apart from the other entries.",
-      "The sensor design from that weekend eventually became the starting point for INTELLEXA's open-hardware lending library, which is still in progress today.",
-    ],
-  },
-  {
-    slug: "mentoring-without-hierarchy",
-    title: "Mentoring without hierarchy: how our pods actually work",
-    category: "Culture",
-    date: "Jan 2026",
-    readTime: "5 min read",
-    excerpt:
-      "INTELLEXA doesn't have a formal seniority ladder inside project pods. Here's how senior members end up mentoring juniors anyway, and why we've kept it this way.",
-    content: [
-      "New members are often surprised that there's no assigned mentor system. Instead, every project pod mixes members across experience levels by default, and mentoring happens as a side effect of working on the same problem together, not as a scheduled activity.",
-      "This works because pods stay small — usually four to six people — which makes it hard for anyone to quietly disappear into the background. When a junior member gets stuck, the person sitting next to them notices within the hour, not at a weekly check-in.",
-      "It also means senior members have to explain their reasoning out loud more often than they would in a strict hierarchy, which turns out to sharpen their own understanding of the tools they're using. Several of our most active contributors say they learned a concept properly only once they had to teach it mid-build.",
-      "The tradeoff is that onboarding takes a little longer without a formal buddy system, and quieter members can occasionally go a few days without much interaction. We've partly addressed this with weekly Build Nights, which give everyone a standing, low-pressure reason to show up and work alongside people outside their own pod.",
-    ],
-  },
-  {
-    slug: "picking-your-first-project",
-    title: "How to pick your first project at INTELLEXA",
-    category: "Guide",
-    date: "Nov 2025",
+    slug: "curiosity-lab-project-expo",
+    title: "Curiosity Lab: from project ideas to expo floor",
+    category: "Event recap",
+    date: "Apr 2025",
     readTime: "4 min read",
     excerpt:
-      "New members ask us this constantly: what should I actually build first? Here's the advice we give every incoming member, distilled into one post.",
+      "The Curiosity Lab Wrap-Up and Open Innovation Project Expo gave students a platform to present original ideas, receive feedback, and close the initiative with real momentum.",
     content: [
-      "The most common mistake new members make is picking a project that's exciting in theory but requires five skills they don't have yet. It's a reasonable instinct — ambitious ideas are motivating — but it usually ends in a project that stalls out in week two.",
-      "Instead, we tell new members to pick a project where they already have roughly seventy percent of the skills required, and the remaining thirty percent is the specific thing they want to learn. That ratio keeps the project moving while still stretching real ability.",
-      "It also helps to pick something with a visible, physical, or interactive result rather than a purely backend or theoretical exercise. Seeing an LED blink because of code you wrote, or a model correctly classify an image, builds momentum in a way that an unfinished backend service usually doesn't for a beginner.",
-      "Domain leads are the fastest route to a good first project — they know which ideas floating around a pod are actually beginner-friendly versus which ones only look that way from the outside. Don't be shy about asking directly at a Build Night.",
+      "The Curiosity Lab Wrap-Up and Open Innovation Project Expo was conducted on 24 April 2025 at the Conference Hall, Rajalakshmi Engineering College. It served as the closing showcase for project ideas developed through the Curiosity Lab initiative.",
+      "Teams submitted their work online before the event, and remote evaluation focused on originality, technical depth, innovation, and real-world impact. The final expo gave students space to present their ideas, demonstrate learning, and engage in peer feedback.",
+      "The program also included a speaker session by Joderick Sherwin J on AI trends and the significance of artificial intelligence, making the event both a showcase and a learning forum.",
+    ],
+  },
+  {
+    slug: "promptsmiths-local-ai",
+    title: "Promptsmiths: building custom AI locally",
+    category: "AI session",
+    date: "Aug 2025",
+    readTime: "3 min read",
+    excerpt:
+      "Promptsmiths introduced participants to language models and Ollama, showing how custom AI assistants can run locally without relying on cloud GPUs.",
+    content: [
+      "Promptsmiths - Forge Your Own AI was organized on 14 August 2025 at Idea Factory, KSL03. The session introduced the fundamentals of language models and showed how AI systems can be customized for individual use cases.",
+      "Participants used Ollama to run and personalize large language models locally, avoiding the need for cloud infrastructure or high-end GPUs. The session connected core concepts with practical implementation.",
+      "By the end, students had explored custom AI assistants, practical tools, and learning pathways for continuing in generative AI.",
+    ],
+  },
+  {
+    slug: "december-learnathon",
+    title: "December Learnathon: learn, build, level up",
+    category: "Learnathon",
+    date: "Dec 2025",
+    readTime: "5 min read",
+    excerpt:
+      "The December Learnathon gathered beginner-friendly sessions across IoT, FlutterFlow, Linux, computer vision, pitching, automation, networking, Tailwind, and web launch basics.",
+    content: [
+      "The December Learnathon focused on beginner-friendly, hands-on learning. Students explored IoT through simulations, FlutterFlow for no-code app building, Linux through virtual machines, and computer vision through simple model training and inference.",
+      "The track also introduced students to AI agents, TailwindCSS, quantum computing, n8n automation, IoT-to-server communication, data movement across networks, pitching fundamentals, and WordPress website launch workflows.",
+      "Together, the sessions gave first-time builders a broad but practical entry point into modern technical tools.",
+    ],
+  },
+  {
+    slug: "titanium-26",
+    title: "Titanium 26: the ultimate battle of brilliance",
+    category: "Flagship",
+    date: "Feb 2026",
+    readTime: "5 min read",
+    excerpt:
+      "Titanium 26 brought together IoT Olympics, NETFIX, HackRush, Code and Conquer, and Shark Tank for a multi-track technical competition series.",
+    content: [
+      "Titanium 26 ran from 12 to 14 February 2026 as a major technical event series. IoT Olympics tested practical knowledge through concepts, hardware tasks, and live project demonstrations.",
+      "NETFIX challenged participants to debug and optimize network infrastructure using Cisco Packet Tracer, while HackRush pushed teams to ideate, build, and pitch solutions aligned with the UN Sustainable Development Goals.",
+      "Code and Conquer focused on backend engineering through no-internet bug-solving and controlled chaos scenarios. Shark Tank, held with Blockchain Innovation Club and ARQ Club, challenged teams to shape data-driven sustainability solutions with business, product, and workflow thinking.",
     ],
   },
 ];

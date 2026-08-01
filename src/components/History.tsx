@@ -20,9 +20,9 @@ export default function History() {
           transition={{ duration: 0.8 }}
           className="mb-20 text-center"
         >
-          <span className="font-mono-tight text-xs uppercase text-[var(--color-electric)]">Since 2019</span>
+          <span className="font-mono-tight text-xs uppercase text-[var(--color-electric)]">2025-2026 report</span>
           <h2 className="mt-4 font-[var(--font-display)] text-4xl font-semibold tracking-tight sm:text-5xl">
-            Seven years, <span className="text-gradient">one lab bench at a time</span>
+            A year of <span className="text-gradient">programs and competitions</span>
           </h2>
         </motion.div>
 
