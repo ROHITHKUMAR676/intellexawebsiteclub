@@ -9,7 +9,6 @@ import Events from "./components/Events";
 import Achievements from "./components/Achievements";
 import Blogs from "./components/Blogs";
 import Members from "./components/Members";
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { useLenis } from "./hooks/useLenis";
 
