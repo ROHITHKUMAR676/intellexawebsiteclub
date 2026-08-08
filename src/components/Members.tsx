@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { domainTeams, executiveRoles } from "../data/content";
+import { domainTeams, executiveRoles, memberLinkedInLinks } from "../data/content";
 
 function initials(name: string) {
   return name
@@ -10,7 +10,17 @@ function initials(name: string) {
     .slice(0, 3);
 }
 
+function LinkedInIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4" fill="currentColor">
+      <path d="M6.94 8.98H3.8V20h3.14V8.98ZM7.2 5.57A1.82 1.82 0 1 0 3.56 5.56 1.82 1.82 0 0 0 7.2 5.57ZM20.45 20v-6.16c0-3.03-1.62-4.44-3.78-4.44a3.25 3.25 0 0 0-2.95 1.62h-.04V8.98h-3V20h3.13v-5.45c0-1.44.27-2.83 2.05-2.83 1.76 0 1.78 1.64 1.78 2.92V20h2.81Z" />
+    </svg>
+  );
+}
+
 function PersonCard({ role, name, index }: { role: string; name: string; index: number }) {
+  const linkedinUrl = memberLinkedInLinks[name] || "#";
+
   return (
     <motion.article
       initial={{ opacity: 0, y: 28 }}
@@ -18,18 +28,30 @@ function PersonCard({ role, name, index }: { role: string; name: string; index: 
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.55, delay: (index % 4) * 0.07 }}
       data-cursor="card"
-      className="glass rounded-2xl px-7 py-8 transition-shadow duration-300 hover:shadow-[0_0_38px_-12px_rgba(56,226,255,0.55)]"
+      className="glass overflow-hidden rounded-xl transition-shadow duration-300 hover:shadow-[0_0_38px_-12px_rgba(56,226,255,0.55)]"
     >
-      <div className="flex items-center gap-4">
-        <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[var(--color-electric)] to-[var(--color-cyan)] font-[var(--font-display)] text-sm font-semibold text-[var(--color-void)]">
+      <div className="flex aspect-[4/3] items-center justify-center border-b border-white/10 bg-gradient-to-br from-white/12 via-[rgba(56,226,255,0.12)] to-[rgba(142,255,243,0.06)]">
+        <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-[var(--color-electric)] to-[var(--color-cyan)] font-[var(--font-display)] text-lg font-semibold text-[var(--color-void)] shadow-[0_0_34px_-12px_rgba(56,226,255,0.9)]">
           {initials(name)}
         </div>
+      </div>
+      <div className="flex min-h-28 items-start justify-between gap-3 px-4 py-4">
         <div className="min-w-0">
-          <p className="font-mono-tight text-[11px] uppercase text-[var(--color-cyan)]">{role}</p>
-          <h3 className="mt-1 truncate font-[var(--font-display)] text-lg font-medium text-[var(--color-ink)]">
+          <h3 className="truncate font-[var(--font-display)] text-lg font-medium text-[var(--color-ink)]">
             {name}
           </h3>
+          <p className="mt-1 font-mono-tight text-[11px] uppercase text-[var(--color-cyan)]">{role}</p>
         </div>
+        <a
+          href={linkedinUrl}
+          aria-label={`${name} LinkedIn`}
+          data-cursor="link"
+          target="_blank"
+          rel="noreferrer"
+          className="visible-focus flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/15 text-[var(--color-ink)] transition-colors hover:border-[var(--color-ink)] hover:bg-[var(--color-ink)] hover:text-[var(--color-void)]"
+        >
+          <LinkedInIcon />
+        </a>
       </div>
     </motion.article>
   );

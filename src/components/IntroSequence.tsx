@@ -53,40 +53,7 @@ export default function IntroSequence({ onDone }: { onDone: () => void }) {
             <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(0deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:88px_88px] opacity-25" />
           </motion.div>
 
-          <button
-            onClick={finish}
-            data-cursor="button"
-            className="visible-focus absolute z-40 font-mono-tight text-xs uppercase text-white/60 transition-colors hover:text-white"
-            style={{ right: 40, top: 34 }}
-          >
-            Skip intro
-          </button>
-
           <div className="relative z-20 flex flex-col items-center text-center">
-            {/* Orbiting ring mark */}
-            <motion.div
-              className="relative mb-8 flex h-16 w-16 items-center justify-center rounded-full"
-              initial={{ opacity: 0, scale: 0.6, rotate: -30 }}
-              animate={{
-                opacity: revealed ? 1 : 0,
-                scale: revealed ? 1 : 0.6,
-                rotate: revealed ? 0 : -30,
-              }}
-              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            >
-              <motion.span
-                className="absolute inset-0 rounded-full border border-[var(--color-cyan)]/50"
-                animate={{ rotate: 360 }}
-                transition={{ duration: 6, repeat: Infinity, ease: "linear" }}
-              />
-              <motion.span
-                className="absolute inset-2 rounded-full border border-white/15"
-                animate={{ rotate: -360 }}
-                transition={{ duration: 9, repeat: Infinity, ease: "linear" }}
-              />
-              <span className="h-2 w-2 rounded-full bg-[var(--color-cyan)] shadow-[0_0_18px_rgba(56,226,255,0.9)]" />
-            </motion.div>
-
             <motion.img
               src={intellexaLogo}
               alt="Intellexa"

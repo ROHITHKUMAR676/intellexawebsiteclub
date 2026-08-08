@@ -1,7 +1,33 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import intellexaLogo from "../assets/Intellexa-Logo.png";
-import { navItems } from "../data/content";
+import { navItems, socialLinks } from "../data/content";
+
+function LinkedInIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4" fill="currentColor">
+      <path d="M6.94 8.98H3.8V20h3.14V8.98ZM7.2 5.57A1.82 1.82 0 1 0 3.56 5.56 1.82 1.82 0 0 0 7.2 5.57ZM20.45 20v-6.16c0-3.03-1.62-4.44-3.78-4.44a3.25 3.25 0 0 0-2.95 1.62h-.04V8.98h-3V20h3.13v-5.45c0-1.44.27-2.83 2.05-2.83 1.76 0 1.78 1.64 1.78 2.92V20h2.81Z" />
+    </svg>
+  );
+}
+
+function InstagramIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.9">
+      <rect x="4" y="4" width="16" height="16" rx="4.2" />
+      <circle cx="12" cy="12" r="3.7" />
+      <path d="M17.35 6.85h.01" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function YouTubeIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4" fill="currentColor">
+      <path d="M21.58 7.19a2.7 2.7 0 0 0-1.9-1.91C18 4.84 12 4.84 12 4.84s-6 0-7.68.44a2.7 2.7 0 0 0-1.9 1.91A28.2 28.2 0 0 0 2 12.01a28.2 28.2 0 0 0 .42 4.8 2.7 2.7 0 0 0 1.9 1.91c1.68.44 7.68.44 7.68.44s6 0 7.68-.44a2.7 2.7 0 0 0 1.9-1.91 28.2 28.2 0 0 0 .42-4.8 28.2 28.2 0 0 0-.42-4.82ZM10 15.08V8.94l5.23 3.07L10 15.08Z" />
+    </svg>
+  );
+}
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -92,14 +118,38 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <a
-          href="#contact"
-          data-cursor="button"
-          onClick={(e) => handleClick(e, "#contact")}
-          className="visible-focus hidden rounded-full bg-[var(--color-ink)] px-4 py-2 text-sm font-medium text-[var(--color-void)] transition-transform hover:scale-105 md:inline-block"
-        >
-          Join us
-        </a>
+        <div className="hidden items-center gap-2 md:flex">
+          <a
+            href={socialLinks.linkedin}
+            data-cursor="link"
+            aria-label="Intellexa LinkedIn"
+            target="_blank"
+            rel="noreferrer"
+            className="visible-focus flex h-9 w-9 items-center justify-center rounded-full bg-[var(--color-ink)] text-[var(--color-void)] transition-transform hover:scale-105"
+          >
+            <LinkedInIcon />
+          </a>
+          <a
+            href={socialLinks.instagram}
+            data-cursor="link"
+            aria-label="Intellexa Instagram"
+            target="_blank"
+            rel="noreferrer"
+            className="visible-focus flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-[var(--color-ink)] transition-transform hover:scale-105 hover:border-[var(--color-cyan)]"
+          >
+            <InstagramIcon />
+          </a>
+          <a
+            href={socialLinks.youtube}
+            data-cursor="link"
+            aria-label="Intellexa YouTube"
+            target="_blank"
+            rel="noreferrer"
+            className="visible-focus flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-[var(--color-ink)] transition-transform hover:scale-105 hover:border-[var(--color-cyan)]"
+          >
+            <YouTubeIcon />
+          </a>
+        </div>
 
         <button
           className="visible-focus flex h-9 w-9 items-center justify-center rounded-full md:hidden"

@@ -92,7 +92,7 @@ export default function Hero() {
             onClick={() => scrollTo("#members")}
             className="visible-focus group relative overflow-hidden rounded-full bg-[var(--color-ink)] px-7 py-3.5 text-sm font-medium text-[var(--color-void)] transition-transform hover:scale-105"
           >
-            Join the club
+            Meet the team
           </button>
           <button
             data-cursor="link"
