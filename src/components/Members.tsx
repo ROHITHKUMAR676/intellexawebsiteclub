@@ -105,7 +105,7 @@ export default function Members() {
         >
           <span className="font-mono-tight text-xs uppercase text-[var(--color-electric)]">Core team</span>
           <h2 className="mt-4 font-[var(--font-display)] text-4xl font-semibold tracking-tight sm:text-5xl">
-            The people <span className="text-gradient">running the lab</span>
+            The people <span className="text-gradient">running the club</span>
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-[var(--color-mist)]">
             Executive roles first, followed by every domain team in order.

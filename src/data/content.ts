@@ -65,6 +65,7 @@ export const memberLinkedInLinks: Record<string, string> = {
   "Krishnapriya Bala": "https://www.linkedin.com/in/krishnapriyabala-j-s-986947331",
   "Megaasri": "https://www.linkedin.com/in/megaasrim06",
   "Siddharth": "https://www.linkedin.com/in/siddharth-ramaswamy-ramkumar-138166390",
+  "Sahana A": "https://www.linkedin.com/in/sahana-a-153806308/"
 };
 
 export const aboutCards = [
@@ -257,7 +258,7 @@ export const domainTeams = [
     domain: "Design",
     lead: "Sherin",
     coLead: "Tamilselvan",
-    members: ["Thiagarajan", "Eathisha"],
+    members: ["Thiagarajan", "Eathisha", "Sahana A"],
   },
   {
     domain: "DSA",
