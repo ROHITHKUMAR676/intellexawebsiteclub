@@ -234,7 +234,7 @@ export const domainTeams = [
     domain: "AI",
     lead: "Siddhartha B",
     coLead: "Abbas",
-    members: ["Harish Govind B"],
+    members: [],
   },
   {
     domain: "APP",
@@ -264,7 +264,7 @@ export const domainTeams = [
     domain: "Event",
     lead: "Sangita",
     coLead: "Lakshana",
-    members: ["Vijayalakshmi", "Mithul"],
+    members: ["Vijayalakshmi", "Mithul", "Varsha"],
   },
   {
     domain: "Info-Sec",
