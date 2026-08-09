@@ -55,14 +55,14 @@ function BlogModal({ blog, onClose }: { blog: Blog; onClose: () => void }) {
 
   return (
     <motion.div
-      className="fixed inset-0 z-[900] flex items-stretch justify-center overflow-y-auto p-0 sm:items-start sm:px-4 sm:py-20"
+      className="fixed inset-0 z-[900] block overflow-y-auto bg-[var(--color-void)] p-0 sm:flex sm:items-start sm:justify-center sm:bg-transparent sm:px-4 sm:py-20"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3 }}
     >
       <motion.div
-        className="absolute inset-0 bg-[var(--color-void)]/95 backdrop-blur-md sm:bg-black/75"
+        className="fixed inset-0 hidden bg-black/75 backdrop-blur-sm sm:block"
         onClick={onClose}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -72,7 +72,7 @@ function BlogModal({ blog, onClose }: { blog: Blog; onClose: () => void }) {
       <motion.article
         role="dialog"
         aria-modal="true"
-        className="relative z-10 min-h-[100dvh] w-full max-w-2xl border border-white/10 bg-[rgba(16,17,20,0.98)] p-5 pt-16 shadow-[0_22px_90px_rgba(0,0,0,0.55)] sm:min-h-0 sm:rounded-3xl sm:p-10 sm:backdrop-blur-xl"
+        className="relative z-10 mx-auto min-h-[100dvh] w-full max-w-2xl border-x border-white/10 bg-[rgba(16,17,20,0.99)] p-5 pt-16 shadow-[0_22px_90px_rgba(0,0,0,0.55)] sm:min-h-0 sm:rounded-3xl sm:border sm:p-10 sm:backdrop-blur-xl"
         initial={{ opacity: 0, y: 24, scale: 0.97 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         exit={{ opacity: 0, y: 16, scale: 0.98 }}
@@ -95,13 +95,13 @@ function BlogModal({ blog, onClose }: { blog: Blog; onClose: () => void }) {
           <span className="font-mono-tight text-[11px] uppercase text-[var(--color-mist-dim)]">{blog.readTime}</span>
         </div>
 
-        <h2 className="mt-4 font-[var(--font-display)] text-[1.65rem] font-semibold leading-tight text-[var(--color-ink)] sm:text-3xl">
+        <h2 className="mt-4 font-[var(--font-display)] text-2xl font-semibold leading-tight text-[var(--color-ink)] sm:text-3xl">
           {blog.title}
         </h2>
 
         <div className="mt-6 space-y-4 pb-8 sm:pb-0">
           {blog.content.map((paragraph, index) => (
-            <p key={index} className="text-[15px] leading-relaxed text-[var(--color-mist)]">
+            <p key={index} className="text-sm leading-7 text-[var(--color-mist)] sm:text-[15px] sm:leading-relaxed">
               {paragraph}
             </p>
           ))}
