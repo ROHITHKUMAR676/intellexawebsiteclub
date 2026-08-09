@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import intellexaLogo from "../assets/intellexa_logo_white_blue.svg";
+import intellexaLogo from "../assets/intellexa_logo_white.svg";
 
 export default function Footer() {
   return (
@@ -12,7 +12,7 @@ export default function Footer() {
           viewport={{ once: true }}
           className="flex items-center"
         >
-          <img src={intellexaLogo} alt="Intellexa" className="h-8 w-auto" />
+          <img src={intellexaLogo} alt="Intellexa" className="h-10 w-auto" />
         </motion.div>
 
         <div className="flex gap-6 font-mono-tight text-[11px] uppercase text-[var(--color-mist-dim)]">
