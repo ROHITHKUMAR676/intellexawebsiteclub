@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import intellexaLogo from "../assets/intellexa_logo_white_blue.svg";
 
-const TAGLINE = ["Create", "Innovate", "Impact"];
-
 export default function IntroSequence({ onDone }: { onDone: () => void }) {
   const [visible, setVisible] = useState(true);
   const [revealed, setRevealed] = useState(false);
@@ -67,20 +65,7 @@ export default function IntroSequence({ onDone }: { onDone: () => void }) {
               transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
             />
 
-            <div className="mt-5 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 font-mono-tight text-[10px] uppercase text-white/65 sm:text-xs">
-              {TAGLINE.map((word, index) => (
-                <span key={word} className="flex items-center gap-4">
-                  <motion.span
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: revealed ? 1 : 0, y: revealed ? 0 : 10 }}
-                    transition={{ duration: 0.5, delay: 0.5 + index * 0.12 }}
-                  >
-                    {word}
-                  </motion.span>
-                  {index < TAGLINE.length - 1 && <span className="h-1 w-1 rounded-full bg-[var(--color-cyan)]" />}
-                </span>
-              ))}
-            </div>
+            
           </div>
         </motion.div>
       )}
