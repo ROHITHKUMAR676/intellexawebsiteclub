@@ -249,12 +249,6 @@ export const domainTeams = [
     members: ["Bharathwaj S", "Parkavi"],
   },
   {
-    domain: "Creative",
-    lead: "Sam",
-    coLead: "Nithin R",
-    members: ["Kaaviya Sri PS", "Varsha"],
-  },
-  {
     domain: "Design",
     lead: "Sherin",
     coLead: "Tamilselvan",
