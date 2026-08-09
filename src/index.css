@@ -83,14 +83,6 @@ body {
   border: 1px solid color-mix(in srgb, var(--color-electric) 35%, transparent);
 }
 
-.glow-electric {
-  box-shadow: 0 0 60px -12px color-mix(in srgb, var(--color-electric) 55%, transparent);
-}
-
-.glow-violet {
-  box-shadow: 0 0 60px -12px color-mix(in srgb, var(--color-violet) 55%, transparent);
-}
-
 .font-mono-tight {
   font-family: var(--font-mono);
   letter-spacing: 0.08em;
@@ -105,6 +97,18 @@ body {
 .glow-border {
   position: relative;
   isolation: isolate;
+  border: none;
+}
+
+button.glow-border {
+  border: none;
+  background: none;
+}
+
+@supports not (mask-composite: exclude) {
+  .glow-border {
+    border: 1px solid color-mix(in srgb, var(--color-electric) 40%, transparent);
+  }
 }
 
 .glow-border::before {
