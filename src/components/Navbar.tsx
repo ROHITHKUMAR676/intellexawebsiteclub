@@ -90,7 +90,7 @@ export default function Navbar() {
           <img
             src={intellexaLogo}
             alt="Intellexa"
-            className="h-16 w-52 object-cover object-[50%_49%]"
+            className="h-15 w-40 object-cover object-[30%_20%]"
           />
         </a>
 

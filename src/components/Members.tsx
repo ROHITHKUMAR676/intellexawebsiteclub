@@ -20,7 +20,6 @@ function LinkedInIcon() {
 
 function PersonCard({ role, name, index }: { role: string; name: string; index: number }) {
   const linkedinUrl = memberLinkedInLinks[name] || "#";
-
   return (
     <motion.article
       initial={{ opacity: 0, y: 28 }}
@@ -28,30 +27,32 @@ function PersonCard({ role, name, index }: { role: string; name: string; index: 
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.55, delay: (index % 4) * 0.07 }}
       data-cursor="card"
-      className="glass overflow-hidden rounded-xl transition-shadow duration-300 hover:shadow-[0_0_38px_-12px_rgba(56,226,255,0.55)]"
+      className="glass glow-border rounded-xl"
     >
-      <div className="flex aspect-[4/3] items-center justify-center border-b border-white/10 bg-gradient-to-br from-white/12 via-[rgba(56,226,255,0.12)] to-[rgba(142,255,243,0.06)]">
-        <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-[var(--color-electric)] to-[var(--color-cyan)] font-[var(--font-display)] text-lg font-semibold text-[var(--color-void)] shadow-[0_0_34px_-12px_rgba(56,226,255,0.9)]">
-          {initials(name)}
+      <div className="overflow-hidden rounded-xl">
+        <div className="flex aspect-[4/3] items-center justify-center border-b border-white/10 bg-gradient-to-br from-white/12 via-[rgba(56,226,255,0.12)] to-[rgba(142,255,243,0.06)]">
+          <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-[var(--color-electric)] to-[var(--color-cyan)] font-[var(--font-display)] text-lg font-semibold text-[var(--color-void)] shadow-[0_0_34px_-12px_rgba(56,226,255,0.9)]">
+            {initials(name)}
+          </div>
         </div>
-      </div>
-      <div className="flex min-h-28 items-start justify-between gap-3 px-4 py-4">
-        <div className="min-w-0">
-          <h3 className="truncate font-[var(--font-display)] text-lg font-medium text-[var(--color-ink)]">
-            {name}
-          </h3>
-          <p className="mt-1 font-mono-tight text-[11px] uppercase text-[var(--color-cyan)]">{role}</p>
+        <div className="flex min-h-28 items-start justify-between gap-3 px-4 py-4">
+          <div className="min-w-0">
+            <h3 className="truncate font-[var(--font-display)] text-lg font-medium text-[var(--color-ink)]">
+              {name}
+            </h3>
+            <p className="mt-1 font-mono-tight text-[11px] uppercase text-[var(--color-cyan)]">{role}</p>
+          </div>
+          <a
+            href={linkedinUrl}
+            aria-label={`${name} LinkedIn`}
+            data-cursor="link"
+            target="_blank"
+            rel="noreferrer"
+            className="visible-focus flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/15 text-[var(--color-ink)] transition-colors hover:border-[var(--color-ink)] hover:bg-[var(--color-ink)] hover:text-[var(--color-void)]"
+          >
+            <LinkedInIcon />
+          </a>
         </div>
-        <a
-          href={linkedinUrl}
-          aria-label={`${name} LinkedIn`}
-          data-cursor="link"
-          target="_blank"
-          rel="noreferrer"
-          className="visible-focus flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/15 text-[var(--color-ink)] transition-colors hover:border-[var(--color-ink)] hover:bg-[var(--color-ink)] hover:text-[var(--color-void)]"
-        >
-          <LinkedInIcon />
-        </a>
       </div>
     </motion.article>
   );
