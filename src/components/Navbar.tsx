@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import intellexaLogo from "../assets/Intellexa-Logo.png";
+import intellexaLogo from "../assets/intellexa_logo_white_blue.svg";
 import { navItems, socialLinks } from "../data/content";
 
 function LinkedInIcon() {
