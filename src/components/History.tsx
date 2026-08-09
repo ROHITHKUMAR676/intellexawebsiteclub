@@ -11,17 +11,17 @@ export default function History() {
   const lineHeight = useSpring(scrollYProgress, { stiffness: 60, damping: 20 });
 
   return (
-    <section id="history" className="relative px-6 py-28 sm:px-10 sm:py-40">
+    <section id="history" className="relative px-5 py-20 sm:px-10 sm:py-40">
       <div className="mx-auto max-w-4xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="mb-20 text-center"
+          className="mb-12 text-center sm:mb-20"
         >
           <span className="font-mono-tight text-xs uppercase text-[var(--color-electric)]">2025-2026 report</span>
-          <h2 className="mt-4 font-[var(--font-display)] text-4xl font-semibold tracking-tight sm:text-5xl">
+          <h2 className="mt-4 font-[var(--font-display)] text-3xl font-semibold tracking-tight sm:text-5xl">
             A year of <span className="text-gradient">programs and competitions</span>
           </h2>
         </motion.div>
@@ -33,7 +33,7 @@ export default function History() {
             style={{ scaleY: lineHeight, transformOrigin: "top" }}
           />
 
-          <div className="flex flex-col gap-12 sm:gap-20">
+          <div className="flex flex-col gap-8 sm:gap-20">
             {historyMilestones.map((m, i) => {
               const left = i % 2 === 0;
               return (
@@ -50,7 +50,7 @@ export default function History() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true, margin: "-15%" }}
                     transition={{ duration: 0.7, ease: [0.2, 0.8, 0.2, 1] }}
-                    className={`glass glow-border w-full rounded-2xl p-6 text-left sm:w-[calc(50%-2rem)] sm:p-7 ${
+                    className={`glass glow-border w-full rounded-2xl p-5 text-left sm:w-[calc(50%-2rem)] sm:p-7 ${
                       left ? "sm:mr-auto sm:text-right" : "sm:ml-auto"
                     }`}
                   >

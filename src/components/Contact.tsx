@@ -11,8 +11,8 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="relative px-6 py-28 sm:px-10 sm:py-40">
-      <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+    <section id="contact" className="relative px-5 py-20 sm:px-10 sm:py-40">
+      <div className="mx-auto grid max-w-6xl gap-10 sm:gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -20,7 +20,7 @@ export default function Contact() {
           transition={{ duration: 0.8 }}
         >
           <span className="font-mono-tight text-xs uppercase text-[var(--color-electric)]">Get in touch</span>
-          <h2 className="mt-4 font-[var(--font-display)] text-4xl font-semibold tracking-tight sm:text-5xl">
+          <h2 className="mt-4 font-[var(--font-display)] text-3xl font-semibold tracking-tight sm:text-5xl">
             Have an idea? <span className="text-gradient">Bring it to the lab.</span>
           </h2>
           <p className="mt-5 max-w-md text-[var(--color-mist)]">
@@ -34,7 +34,7 @@ export default function Contact() {
             <ContactRow label="Programs" value="Learning sessions, showcases, and technical events" />
           </div>
 
-          <div className="mt-10 flex gap-3">
+          <div className="mt-8 flex flex-wrap gap-3 sm:mt-10">
             {["Instagram", "LinkedIn", "GitHub"].map((s) => (
               <a
                 key={s}
@@ -53,7 +53,7 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="glass relative overflow-hidden rounded-3xl p-8 sm:p-10"
+          className="glass relative overflow-hidden rounded-2xl p-5 sm:rounded-3xl sm:p-10"
         >
           <AnimatePresence mode="wait">
             {status === "idle" ? (

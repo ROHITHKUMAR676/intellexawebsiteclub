@@ -28,7 +28,7 @@ function StatCounter({ value, suffix, label }: { value: number; suffix: string; 
 
 export default function About() {
   return (
-    <section id="about" className="relative px-6 py-28 sm:px-10 sm:py-40">
+    <section id="about" className="relative px-5 py-20 sm:px-10 sm:py-40">
       <div className="mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -38,7 +38,7 @@ export default function About() {
           className="max-w-2xl"
         >
           <span className="font-mono-tight text-xs uppercase text-[var(--color-electric)]">About the club</span>
-          <h2 className="mt-4 font-[var(--font-display)] text-4xl font-semibold tracking-tight sm:text-5xl">
+          <h2 className="mt-4 font-[var(--font-display)] text-3xl font-semibold tracking-tight sm:text-5xl">
             A year built around <span className="text-gradient">learning by doing</span>.
           </h2>
           <p className="mt-5 text-[var(--color-mist)]">
@@ -47,7 +47,7 @@ export default function About() {
           </p>
         </motion.div>
 
-        <div className="mt-16 grid gap-5 sm:grid-cols-3">
+        <div className="mt-10 grid gap-4 sm:mt-16 sm:grid-cols-3 sm:gap-5">
           {aboutCards.map((card, i) => (
             <motion.div
               key={card.title}
@@ -58,7 +58,7 @@ export default function About() {
               transition={{ duration: 0.7, delay: i * 0.12 }}
               whileHover={{ y: -6, rotateX: 2, rotateY: -2 }}
               style={{ transformPerspective: 800 }}
-              className="glass glow-border group flex flex-col gap-4 rounded-2xl p-7"
+              className="glass glow-border group flex flex-col gap-4 rounded-2xl p-5 sm:p-7"
             >
               <motion.div
                 animate={{ y: [0, -4, 0] }}
@@ -80,7 +80,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.7 }}
-          className="glass mt-8 grid grid-cols-2 gap-8 rounded-2xl px-8 py-10 sm:grid-cols-4"
+          className="glass mt-6 grid grid-cols-2 gap-6 rounded-2xl px-5 py-7 sm:mt-8 sm:grid-cols-4 sm:gap-8 sm:px-8 sm:py-10"
         >
           {aboutStats.map((s) => (
             <StatCounter key={s.label} value={s.value} suffix={s.suffix} label={s.label} />

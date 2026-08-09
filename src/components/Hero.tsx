@@ -30,7 +30,7 @@ export default function Hero() {
   }
 
   return (
-    <section id="home" className="relative flex min-h-[100svh] items-center overflow-hidden pt-28">
+    <section id="home" className="relative flex min-h-[100svh] items-center overflow-hidden pt-24 sm:pt-28">
       <ParticleField />
 
       {/* animated grid */}
@@ -62,11 +62,11 @@ export default function Hero() {
         variants={container}
         initial="hidden"
         animate="show"
-        className="relative z-10 mx-auto flex w-full max-w-6xl flex-col items-start px-6 sm:px-10"
+        className="relative z-10 mx-auto flex w-full max-w-6xl flex-col items-start px-5 sm:px-10"
       >
         <motion.span
           variants={item}
-          className="glass mb-6 flex items-center gap-2 rounded-full px-4 py-1.5 font-mono-tight text-[11px] uppercase text-[var(--color-mist)]"
+          className="glass mb-5 flex items-center gap-2 rounded-full px-3.5 py-1.5 font-mono-tight text-[10px] uppercase text-[var(--color-mist)] sm:mb-6 sm:px-4 sm:text-[11px]"
         >
           <span className="h-1.5 w-1.5 rounded-full bg-[var(--color-cyan)]" />
           Rajalakshmi Engineering College
@@ -74,40 +74,39 @@ export default function Hero() {
 
         <motion.h1
           variants={item}
-          className="max-w-4xl font-[var(--font-display)] text-[13vw] font-semibold leading-[0.95] tracking-tight sm:text-7xl md:text-8xl"
+          className="max-w-4xl font-[var(--font-display)] text-[12.5vw] font-semibold leading-[0.98] tracking-tight sm:text-7xl sm:leading-[0.95] md:text-8xl"
         >
           Innovate.
           <br />
           Impact. <span className="text-gradient">Inspire.</span>
         </motion.h1>
 
-        <motion.p variants={item} className="mt-8 max-w-xl text-base leading-relaxed text-[var(--color-mist)] sm:text-lg">
+        <motion.p variants={item} className="mt-6 max-w-xl text-base leading-relaxed text-[var(--color-mist)] sm:mt-8 sm:text-lg">
           Intellexa REC is a technical club that organizes events, workshops, and
           activities to help students learn, explore emerging technologies, and thrive in their technical journey.
         </motion.p>
 
-        <motion.div variants={item} className="mt-10 flex flex-wrap items-center gap-4">
+        <motion.div variants={item} className="mt-8 flex w-full flex-wrap items-center gap-3 sm:mt-10 sm:w-auto sm:gap-4">
           <button
             data-cursor="button"
             onClick={() => scrollTo("#members")}
-            className="visible-focus group relative overflow-hidden rounded-full bg-[var(--color-ink)] px-7 py-3.5 text-sm font-medium text-[var(--color-void)] transition-transform hover:scale-105"
+            className="visible-focus group relative flex-1 overflow-hidden rounded-full bg-[var(--color-ink)] px-5 py-3.5 text-sm font-medium text-[var(--color-void)] transition-transform hover:scale-105 sm:flex-none sm:px-7"
           >
             Meet the team
           </button>
           <button
             data-cursor="link"
             onClick={() => scrollTo("#events")}
-            className="visible-focus rounded-full border border-white/15 px-7 py-3.5 text-sm font-medium text-[var(--color-ink)] transition-colors hover:border-white/40"
+            className="visible-focus flex-1 rounded-full border border-white/15 px-5 py-3.5 text-sm font-medium text-[var(--color-ink)] transition-colors hover:border-white/40 sm:flex-none sm:px-7"
           >
             See the events
           </button>
         </motion.div>
 
-        <motion.div variants={item} className="mt-16 flex items-center gap-8 font-mono-tight text-xs text-[var(--color-mist-dim)] sm:gap-12">
+        <motion.div variants={item} className="mt-12 flex flex-wrap items-center gap-4 font-mono-tight text-[11px] text-[var(--color-mist-dim)] sm:mt-16 sm:gap-12 sm:text-xs">
           <span>20+ PROGRAMS</span>
           <span className="h-1 w-1 rounded-full bg-[var(--color-mist-dim)]" />
           <span>5 TITANIUM EVENTS</span>
-          <span className="hidden h-1 w-1 rounded-full bg-[var(--color-mist-dim)] sm:block" />
         </motion.div>
       </motion.div>
 

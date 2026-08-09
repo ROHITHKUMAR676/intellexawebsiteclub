@@ -73,10 +73,10 @@ export default function Navbar() {
       initial={{ y: -40, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, delay: 0.15 }}
-      className="fixed inset-x-0 top-0 z-50 flex justify-center px-4 pt-4 sm:pt-6"
+      className="fixed inset-x-0 top-0 z-50 flex justify-center px-3 pt-3 sm:px-4 sm:pt-6"
     >
       <nav
-        className={`glass flex w-full max-w-5xl items-center justify-between rounded-2xl px-4 transition-all duration-500 sm:px-6 ${
+        className={`glass flex w-full max-w-5xl items-center justify-between rounded-xl px-3 transition-all duration-500 sm:rounded-2xl sm:px-6 ${
           scrolled ? "py-2.5" : "py-3.5"
         }`}
       >
@@ -84,13 +84,13 @@ export default function Navbar() {
           href="#home"
           data-cursor="link"
           onClick={(e) => handleClick(e, "#home")}
-          className="visible-focus flex h-16 w-52 items-center justify-center overflow-hidden"
+          className="visible-focus flex h-14 w-44 items-center justify-start overflow-hidden sm:h-16 sm:w-52 sm:justify-center"
           aria-label="Intellexa home"
         >
           <img
             src={intellexaLogo}
             alt="Intellexa"
-            className="h-12 w-36 object-cover object-[30%_20%]"
+            className="h-11 w-32 object-cover object-[30%_20%] sm:h-12 sm:w-36"
           />
         </a>
 
@@ -173,7 +173,7 @@ export default function Navbar() {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0 }}
-          className="glass absolute left-4 right-4 top-[72px] rounded-2xl p-3 md:hidden"
+          className="absolute left-3 right-3 top-[70px] rounded-2xl border border-white/12 bg-[rgba(8,11,18,0.98)] p-3 shadow-[0_18px_70px_rgba(0,0,0,0.55)] backdrop-blur-xl md:hidden"
         >
           <ul className="flex flex-col">
             {navItems.map((item) => (
@@ -182,7 +182,7 @@ export default function Navbar() {
                   href={item.href}
                   onClick={(e) => handleClick(e, item.href)}
                   className={`block rounded-xl px-4 py-3 text-sm ${
-                    active === item.href ? "bg-white/8 text-[var(--color-ink)]" : "text-[var(--color-mist)]"
+                    active === item.href ? "bg-white/10 text-[var(--color-ink)]" : "text-[var(--color-ink)]/85"
                   }`}
                 >
                   {item.label}

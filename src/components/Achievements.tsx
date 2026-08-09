@@ -14,7 +14,7 @@ function AchievementCard({ a }: { a: (typeof achievements)[number] }) {
       data-cursor="card"
       whileHover={{ y: -8, scale: 1.015 }}
       transition={{ type: "spring", stiffness: 250, damping: 20 }}
-      className="glass glow-border flex h-[300px] w-[78vw] shrink-0 flex-col justify-between rounded-3xl p-7 sm:w-[360px]"
+      className="glass glow-border flex min-h-[270px] w-[86vw] shrink-0 flex-col justify-between rounded-2xl p-5 sm:h-[300px] sm:w-[360px] sm:rounded-3xl sm:p-7"
     >
       <span className="font-mono-tight text-[11px] uppercase text-[var(--color-mist-dim)]">{a.title}</span>
       <div>
@@ -36,7 +36,7 @@ export default function Achievements() {
 
   return (
     <section id="achievements" className="relative">
-      <div className="px-6 pt-28 sm:px-10 sm:pt-40">
+      <div className="px-5 pt-20 sm:px-10 sm:pt-40">
         <div className="mx-auto max-w-6xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -45,7 +45,7 @@ export default function Achievements() {
             transition={{ duration: 0.8 }}
           >
             <span className="font-mono-tight text-xs uppercase text-[var(--color-electric)]">Track record</span>
-            <h2 className="mt-4 max-w-xl font-[var(--font-display)] text-4xl font-semibold tracking-tight sm:text-5xl">
+            <h2 className="mt-4 max-w-xl font-[var(--font-display)] text-3xl font-semibold tracking-tight sm:text-5xl">
               Recognition earned <span className="text-gradient">the slow way</span>
             </h2>
           </motion.div>
@@ -65,7 +65,7 @@ export default function Achievements() {
       </div>
       <div className="hidden pb-28 sm:pb-40 md:block" />
 
-      <div className="no-scrollbar flex gap-5 overflow-x-auto px-6 py-28 md:hidden">
+      <div className="no-scrollbar flex gap-4 overflow-x-auto px-5 py-16 md:hidden">
         {achievements.map((a) => (
           <div key={a.title} className="shrink-0">
             <AchievementCard a={a} />

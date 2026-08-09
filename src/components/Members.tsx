@@ -95,7 +95,7 @@ function DomainCard({ team, index }: { team: (typeof domainTeams)[number]; index
 
 export default function Members() {
   return (
-    <section id="members" className="relative px-6 py-28 sm:px-10 sm:py-40">
+    <section id="members" className="relative px-5 py-20 sm:px-10 sm:py-40">
       <div className="mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -105,7 +105,7 @@ export default function Members() {
           className="text-center"
         >
           <span className="font-mono-tight text-xs uppercase text-[var(--color-electric)]">Core team</span>
-          <h2 className="mt-4 font-[var(--font-display)] text-4xl font-semibold tracking-tight sm:text-5xl">
+          <h2 className="mt-4 font-[var(--font-display)] text-3xl font-semibold tracking-tight sm:text-5xl">
             The people <span className="text-gradient">running the club</span>
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-[var(--color-mist)]">
@@ -113,7 +113,7 @@ export default function Members() {
           </p>
         </motion.div>
 
-        <div className="mt-16">
+        <div className="mt-10 sm:mt-16">
           <h3 className="font-mono-tight text-xs uppercase tracking-[0.24em] text-[var(--color-cyan)]">
             Executive roles
           </h3>
@@ -124,11 +124,11 @@ export default function Members() {
           </div>
         </div>
 
-        <div className="mt-14">
+        <div className="mt-12 sm:mt-14">
           <h3 className="font-mono-tight text-xs uppercase tracking-[0.24em] text-[var(--color-cyan)]">
             Domains
           </h3>
-          <div className="mt-8 space-y-14">
+          <div className="mt-8 space-y-10 sm:space-y-14">
             {domainTeams.map((team, index) => (
               <DomainCard key={team.domain} team={team} index={index} />
             ))}
