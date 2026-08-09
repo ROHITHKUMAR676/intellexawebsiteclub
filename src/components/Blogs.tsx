@@ -15,7 +15,7 @@ function BlogCard({ blog, index, onOpen }: { blog: Blog; index: number; onOpen: 
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.55, delay: (index % 4) * 0.07 }}
       whileHover={{ y: -6 }}
-      className="visible-focus glass flex h-full flex-col justify-between rounded-2xl p-7 text-left transition-shadow duration-300 hover:shadow-[0_0_38px_-12px_rgba(56,226,255,0.55)]"
+      className="visible-focus glass glow-border flex h-full flex-col justify-between rounded-2xl p-7 text-left"
     >
       <div>
         <div className="flex items-center justify-between">

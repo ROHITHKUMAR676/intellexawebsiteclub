@@ -50,7 +50,7 @@ export default function History() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true, margin: "-15%" }}
                     transition={{ duration: 0.7, ease: [0.2, 0.8, 0.2, 1] }}
-                    className={`glass w-full rounded-2xl p-6 text-left sm:w-[calc(50%-2rem)] sm:p-7 ${
+                    className={`glass glow-border w-full rounded-2xl p-6 text-left sm:w-[calc(50%-2rem)] sm:p-7 ${
                       left ? "sm:mr-auto sm:text-right" : "sm:ml-auto"
                     }`}
                   >

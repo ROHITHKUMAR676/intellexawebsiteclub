@@ -54,24 +54,26 @@ function EventCard({ ev }: { ev: (typeof events)[number] }) {
       data-cursor="card"
       whileHover={{ y: -8, scale: 1.015 }}
       transition={{ type: "spring", stiffness: 250, damping: 20 }}
-      className="glass flex h-[420px] w-[80vw] shrink-0 flex-col justify-between overflow-hidden rounded-3xl p-8 sm:w-[420px]"
+      className="glass glow-border h-[420px] w-[80vw] shrink-0 rounded-3xl sm:w-[420px]"
     >
-      <div>
-        <div className="flex items-center justify-between">
-          <span className="font-mono-tight text-[11px] uppercase text-[var(--color-cyan)]">{ev.tag}</span>
-          <span className="font-mono-tight text-[11px] uppercase text-[var(--color-mist-dim)]">{ev.date}</span>
+      <div className="flex h-full flex-col justify-between overflow-hidden rounded-3xl p-8">
+        <div>
+          <div className="flex items-center justify-between">
+            <span className="font-mono-tight text-[11px] uppercase text-[var(--color-cyan)]">{ev.tag}</span>
+            <span className="font-mono-tight text-[11px] uppercase text-[var(--color-mist-dim)]">{ev.date}</span>
+          </div>
+          <div className="mt-8 flex h-32 items-center justify-center rounded-2xl bg-gradient-to-br from-[var(--color-electric)]/15 via-transparent to-[var(--color-violet)]/15">
+            <svg viewBox="0 0 64 64" className="h-14 w-14 opacity-70">
+              <circle cx="32" cy="32" r="22" fill="none" stroke="var(--color-electric)" strokeWidth="1.2" />
+              <circle cx="32" cy="32" r="12" fill="none" stroke="var(--color-violet)" strokeWidth="1.2" />
+              <circle cx="32" cy="32" r="3" fill="var(--color-cyan)" />
+            </svg>
+          </div>
         </div>
-        <div className="mt-8 flex h-32 items-center justify-center rounded-2xl bg-gradient-to-br from-[var(--color-electric)]/15 via-transparent to-[var(--color-violet)]/15">
-          <svg viewBox="0 0 64 64" className="h-14 w-14 opacity-70">
-            <circle cx="32" cy="32" r="22" fill="none" stroke="var(--color-electric)" strokeWidth="1.2" />
-            <circle cx="32" cy="32" r="12" fill="none" stroke="var(--color-violet)" strokeWidth="1.2" />
-            <circle cx="32" cy="32" r="3" fill="var(--color-cyan)" />
-          </svg>
+        <div>
+          <h3 className="font-[var(--font-display)] text-2xl font-medium">{ev.title}</h3>
+          <p className="mt-3 text-sm leading-relaxed text-[var(--color-mist)]">{ev.description}</p>
         </div>
-      </div>
-      <div>
-        <h3 className="font-[var(--font-display)] text-2xl font-medium">{ev.title}</h3>
-        <p className="mt-3 text-sm leading-relaxed text-[var(--color-mist)]">{ev.description}</p>
       </div>
     </motion.div>
   );
