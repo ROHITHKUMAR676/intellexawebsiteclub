@@ -27,7 +27,7 @@ export default function Events() {
 
       {/* Desktop: scroll-driven horizontal track. Mobile: native horizontal swipe. */}
       <div ref={sectionRef} className="relative hidden h-[320vh] md:block">
-        <div className="sticky top-0 flex h-screen items-center overflow-hidden">
+        <div className="sticky top-0 flex h-screen items-start overflow-hidden pt-40">
           <motion.div style={{ x }} className="flex gap-6 pl-10">
             {events.map((ev) => (
               <EventCard key={ev.title} ev={ev} />
