@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import intellexaLogo from "../assets/intellexa_logo_white.svg";
 
 export default function Footer() {
   return (
@@ -11,10 +12,12 @@ export default function Footer() {
           viewport={{ once: true }}
           className="flex items-center gap-2 font-[var(--font-display)] text-sm font-semibold"
         >
-          <span className="orbit-ring flex h-6 w-6 items-center justify-center">
-            <span className="h-1.5 w-1.5 rounded-full bg-[var(--color-cyan)]" />
-          </span>
-          INTELLEXA
+          <img
+            src={intellexaLogo}
+            alt="Intellexa"
+            className="h-16 w-52 object-cover object-[20%_20%]"
+          />
+          
         </motion.div>
 
         <div className="flex gap-6 font-mono-tight text-[11px] uppercase text-[var(--color-mist-dim)]">
