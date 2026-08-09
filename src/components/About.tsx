@@ -58,7 +58,7 @@ export default function About() {
               transition={{ duration: 0.7, delay: i * 0.12 }}
               whileHover={{ y: -6, rotateX: 2, rotateY: -2 }}
               style={{ transformPerspective: 800 }}
-              className="glass group flex flex-col gap-4 rounded-2xl p-7"
+              className="glass glow-border group flex flex-col gap-4 rounded-2xl p-7"
             >
               <motion.div
                 animate={{ y: [0, -4, 0] }}
