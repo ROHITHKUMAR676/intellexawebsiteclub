@@ -65,7 +65,7 @@ export default function Achievements() {
       </div>
       <div className="hidden pb-28 sm:pb-40 md:block" />
 
-      <div className="no-scrollbar flex gap-5 overflow-x-auto px-6 pb-4 pt-14 md:hidden">
+      <div className="no-scrollbar flex gap-5 overflow-x-auto px-6 py-28 md:hidden">
         {achievements.map((a) => (
           <div key={a.title} className="shrink-0">
             <AchievementCard a={a} />
