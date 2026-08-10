@@ -61,7 +61,7 @@ export const memberLinkedInLinks: Record<string, string> = {
   "Rohith Kumar S": "https://www.linkedin.com/in/rohithkumar-s-2a8550331",
   "Gurunethra": "https://www.linkedin.com/in/gurunethra-k-a407a8394",
   "H Vikash": "https://www.linkedin.com/in/vikash-hariharan-12592a382",
-  "Shri Varshini": "https://www.linkedin.com/in/shri-varshini-natarajan-567b7931",
+  "Shri Varshini": "https://www.linkedin.com/in/shri-varshini-natarajan-567b79317/",
   "Krishnapriya Bala": "https://www.linkedin.com/in/krishnapriyabala-j-s-986947331",
   "Megaasri": "https://www.linkedin.com/in/megaasrim06",
   "Siddharth": "https://www.linkedin.com/in/siddharth-ramaswamy-ramkumar-138166390",
@@ -281,8 +281,8 @@ export const domainTeams = [
   {
     domain: "Media",
     lead: "RA Karthikha",
-    coLead: "Darshan S",
-    members: ["Rahul M A", "Dhanush"],
+    coLead: "Rahul M A",
+    members: ["Darshan S", "Dhanush"],
   },
   {
     domain: "PR",
