@@ -281,8 +281,8 @@ export const domainTeams = [
   {
     domain: "Media",
     lead: "RA Karthikha",
-    coLead: "Rahul M A",
-    members: ["Darshan S", "Dhanush"],
+    coLead: "Darshan S",
+    members: ["Rahul M A", "Dhanush"],
   },
   {
     domain: "PR",
