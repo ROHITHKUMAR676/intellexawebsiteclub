@@ -42,8 +42,7 @@ export default function About() {
             A year built around <span className="text-gradient">learning by doing</span>.
           </h2>
           <p className="mt-5 text-[var(--color-mist)]">
-            Intellexa REC's 2025-2026 report captures a calendar of practical sessions, showcases, and competitions
-            shaped around curiosity, peer learning, and real-world problem solving.
+            Intellexa's 2025–2026 journey brought together technical sessions, hands-on workshops, creative challenges, project showcases, and flagship competitions — giving students opportunities to explore beyond the classroom and turn ideas into action. 
           </p>
         </motion.div>
 

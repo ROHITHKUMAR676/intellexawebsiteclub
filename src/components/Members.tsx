@@ -106,16 +106,16 @@ export default function Members() {
         >
           <span className="font-mono-tight text-xs uppercase text-[var(--color-electric)]">Core team</span>
           <h2 className="mt-4 font-[var(--font-display)] text-3xl font-semibold tracking-tight sm:text-5xl">
-            The people <span className="text-gradient">running the club</span>
+            The People <span className="text-gradient">Behind Intellexa</span>
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-[var(--color-mist)]">
-            Executive roles first, followed by every domain team in order.
+            A team of student leaders, creators, builders, and problem-solvers working together to shape the Intellexa experience.
           </p>
         </motion.div>
 
         <div className="mt-10 sm:mt-16">
           <h3 className="font-mono-tight text-xs uppercase tracking-[0.24em] text-[var(--color-cyan)]">
-            Executive roles
+            Executive roles - Leading the community, shaping the vision.
           </h3>
           <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {executiveRoles.map((member, index) => (
@@ -126,7 +126,7 @@ export default function Members() {
 
         <div className="mt-12 sm:mt-14">
           <h3 className="font-mono-tight text-xs uppercase tracking-[0.24em] text-[var(--color-cyan)]">
-            Domains
+            Domains - Different skills. One community.
           </h3>
           <div className="mt-8 space-y-10 sm:space-y-14">
             {domainTeams.map((team, index) => (

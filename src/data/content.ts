@@ -72,17 +72,17 @@ export const aboutCards = [
   {
     icon: "spark",
     title: "What we run",
-    body: "Learning sessions, launch events, hackathons, technical contests, and creative challenges that help REC students turn curiosity into practice.",
+    body: "From technical workshops and learning sessions to hackathons, competitions, project showcases, and creative challenges, Intellexa creates opportunities for students to learn, experiment, collaborate, and build.",
   },
   {
     icon: "orbit",
     title: "How we learn",
-    body: "Hands-on formats come first: local AI with Ollama, Docker demos, Linux labs, FlutterFlow builds, IoT simulations, and live project showcases.",
+    body: "We believe the best way to learn technology is by doing. Our sessions focus on hands-on experiences — from AI and Docker to Linux, FlutterFlow, IoT, and project development.",
   },
   {
     icon: "signal",
     title: "Who joins",
-    body: "Students who want to explore emerging technologies, build practical skills, pitch better, compete with confidence, and create real-world impact.",
+    body: "Curious students who want to explore technology, sharpen their skills, build meaningful projects, compete on bigger platforms, and learn alongside a community of like-minded people",
   },
 ];
 
@@ -98,37 +98,37 @@ export const historyMilestones = [
     year: "Apr 2025",
     title: "Curiosity Lab project expo",
     description:
-      "The Curiosity Lab Wrap-Up and Open Innovation Project Expo closed the initiative with student project showcases, remote evaluation, peer feedback, certificates, and prizes.",
+      "Curiosity Lab concluded with an open innovation expo where student teams showcased their projects, received feedback, and celebrated the ideas they developed throughout the initiative.",
   },
   {
     year: "Aug 2025",
     title: "Creative and AI sessions",
     description:
-      "Promptsmiths introduced local language models and custom AI assistants, while Pixel Aura celebrated Photography Day through visual storytelling challenges and an interactive quiz.",
+      "Promptsmiths introduced students to local AI and custom AI assistants, while Pixel Aura explored photography through creative challenges, visual storytelling, and interactive learning.",
   },
   {
     year: "Oct 2025",
-    title: "Docker demystified",
+    title: "Docker Demystified",
     description:
-      "A hands-on session helped students understand containers, images, Dockerfiles, Docker Compose, and how modern applications are packaged and deployed consistently.",
+      "Students explored containerization through practical demonstrations of Docker images, containers, Dockerfiles, and Compose — connecting concepts with real deployment workflows.",
   },
   {
     year: "2025-26",
     title: "Renaissance inauguration",
     description:
-      "Renaissance launched the Intellexa REC 2025-2026 cycle, introduced the new team, and set a direction around innovation, collaboration, growth, and peer learning.",
+      "The new Intellexa team began the 2025–26 cycle with a shared vision around learning, collaboration, innovation, and building a stronger technical community.",
   },
   {
     year: "Dec 2025",
     title: "December Learnathon",
     description:
-      "The Learnathon brought beginner-friendly sessions on IoT, FlutterFlow, Linux, computer vision, quantum, automation, networking, pitching, Tailwind, and web launch basics.",
+      "A multi-track learning experience covering AI, IoT, FlutterFlow, Linux, computer vision, quantum technology, automation, networking, pitching, Tailwind, and web development.",
   },
   {
     year: "Feb 2026",
     title: "Titanium 26",
     description:
-      "Titanium 26 hosted competitive technical events including IoT Olympics, NETFIX, HackRush, Code and Conquer, and Shark Tank with multi-round challenges and prize pools.",
+      "Intellexa's flagship competition series brought together five major challenges spanning IoT, networking, hackathons, backend development, and product pitching.",
   },
 ];
 
@@ -138,42 +138,42 @@ export const events = [
     date: "24 Apr 2025",
     tag: "Project expo",
     description:
-      "A wrap-up and open innovation expo where teams presented project ideas developed through Curiosity Lab, with evaluation on originality, technical depth, innovation, and real-world impact.",
+      "A showcase of ideas built through Curiosity Lab, where student teams presented their projects and received feedback on originality, technical depth, innovation, and real-world impact.",
   },
   {
     title: "Promptsmiths",
     date: "14 Aug 2025",
     tag: "AI session",
     description:
-      "Forge Your Own AI introduced language models and Ollama, helping participants run and personalize local AI assistants without cloud infrastructure or high-end GPUs.",
+      "An AI-focused session introducing language models and Ollama, helping students explore how AI assistants can be built and run locally without depending entirely on cloud infrastructure",
   },
   {
     title: "Pixel Aura",
     date: "19 Aug 2025",
     tag: "Creative event",
     description:
-      "A Photography Day event with themed photo challenges, a Kahoot quiz, and fundamentals of framing, lighting, perspective, and composition.",
+      "A creative photography experience featuring themed challenges, an interactive Kahoot quiz, and practical insights into framing, lighting, perspective, and visual storytelling.",
   },
   {
     title: "Docker Demystified",
     date: "09 Oct 2025",
     tag: "Tech session",
     description:
-      "A hands-on containerization session covering Docker images, containers, Dockerfiles, Docker Compose, and modern application deployment workflows.",
+      "A hands-on introduction to Docker covering containers, images, Dockerfiles, Docker Compose, and the fundamentals of modern application deployment.",
   },
   {
     title: "Hack the Defense",
     date: "07 Feb 2026",
     tag: "Cybersecurity",
     description:
-      "A cybersecurity and ethical hacking workshop on threats, vulnerabilities, security testing, cyber defense strategies, and responsible practice.",
+      "A cybersecurity workshop exploring common threats, vulnerabilities, ethical hacking practices, security testing, and strategies for building stronger digital defenses.",
   },
   {
     title: "Titanium 26",
     date: "12-14 Feb 2026",
     tag: "Flagship contests",
     description:
-      "A multi-event technical series featuring IoT Olympics, NETFIX, HackRush, Code and Conquer, and Shark Tank across hardware, networking, hackathon, backend, and product tracks.",
+      "Intellexa's flagship technical competition series featuring IoT Olympics, NETFIX, HackRush, Code and Conquer, and Shark Tank across hardware, networking, hackathon, backend, and product innovation tracks.",
   },
 ];
 

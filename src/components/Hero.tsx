@@ -82,8 +82,7 @@ export default function Hero() {
         </motion.h1>
 
         <motion.p variants={item} className="mt-6 max-w-xl text-base leading-relaxed text-[var(--color-mist)] sm:mt-8 sm:text-lg">
-          Intellexa REC is a technical club that organizes events, workshops, and
-          activities to help students learn, explore emerging technologies, and thrive in their technical journey.
+          Intellexa is a Student-driven Technical Community at Rajalakshmi Engineering College, creating spaces to learn emerging technologies, build real-world solutions, compete, and grow together.
         </motion.p>
 
         <motion.div variants={item} className="mt-8 flex w-full flex-wrap items-center gap-3 sm:mt-10 sm:w-auto sm:gap-4">
@@ -104,9 +103,11 @@ export default function Hero() {
         </motion.div>
 
         <motion.div variants={item} className="mt-12 flex flex-wrap items-center gap-4 font-mono-tight text-[11px] text-[var(--color-mist-dim)] sm:mt-16 sm:gap-12 sm:text-xs">
-          <span>20+ PROGRAMS</span>
+          <span>20+ PROGRAMS & SESSIONS</span>
           <span className="h-1 w-1 rounded-full bg-[var(--color-mist-dim)]" />
           <span>5 TITANIUM EVENTS</span>
+          <span className="h-1 w-1 rounded-full bg-[var(--color-mist-dim)]" />
+          <span>₹95K PRIZE POOL</span>
         </motion.div>
       </motion.div>
 
