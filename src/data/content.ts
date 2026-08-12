@@ -90,7 +90,7 @@ export const aboutStats = [
   { value: 28, suffix: "", label: "Report pages" },
   { value: 20, suffix: "+", label: "Programs logged" },
   { value: 5, suffix: "", label: "Titanium events" },
-  { value: 2026, suffix: "", label: "Current cycle" },
+  { value: 50, suffix: "+", label: "Members" },
 ];
 
 export const historyMilestones = [
