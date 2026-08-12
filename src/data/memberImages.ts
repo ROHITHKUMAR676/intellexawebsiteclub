@@ -52,6 +52,8 @@ export const memberImagePositionByName: Record<string, string> = {
   Eathisha: "center 50%",
   "Fathina Begum B": "center 58%",
   "H Vikash": "center 50%",
+  "Bert Gawin D": "center 14%",
+
   Kaviarasi: "center 44%",
   "Krishnapriya Bala": "center 14%",
   Lakshana: "center 58%",
@@ -77,14 +79,17 @@ export const memberImagePositionByName: Record<string, string> = {
   "Sherin": "center 50%",
   "Arya MR": "center 50%",
   "Mahesh D": "center 50%",
-  "Tamilselvan": "center 50%",
+  "Tamilselvan": "center 40%",
   "Siddharth": "center 50%",
   Sangita: "center 16%",
   "Sarveshwaran D": "center 18%",
   Sherwin: "center 14%",
+  Harish: "center 14%",
+  Subin: "center 14%",
+
   "Siddhartha B": "center 18%",
   Vijayalakshmi: "center 16%",
   "Vineeth P": "center 58%",
   "Muthuraj": "center 58%",
-  "Sarvesh Sivasankaran": "center 16%"
+  "Sarvesh Sivasankaran": "center 18%"
 };

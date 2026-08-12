@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { domainTeams, executiveRoles, memberLinkedInLinks } from "../data/content";
+import { memberImagePathByName, memberImagePositionByName } from "../data/memberImages";
 
 function initials(name: string) {
   return name
@@ -20,6 +21,9 @@ function LinkedInIcon() {
 
 function PersonCard({ role, name, index }: { role: string; name: string; index: number }) {
   const linkedinUrl = memberLinkedInLinks[name] || "#";
+  const imageSrc = memberImagePathByName[name];
+  const imagePosition = memberImagePositionByName[name] || "center";
+
   return (
     <motion.article
       initial={{ opacity: 0, y: 28 }}
@@ -30,8 +34,27 @@ function PersonCard({ role, name, index }: { role: string; name: string; index: 
       className="glass glow-border rounded-xl"
     >
       <div className="overflow-hidden rounded-xl">
-        <div className="flex aspect-[4/3] items-center justify-center border-b border-white/10 bg-gradient-to-br from-white/12 via-[rgba(56,226,255,0.12)] to-[rgba(142,255,243,0.06)]">
-          <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-[var(--color-electric)] to-[var(--color-cyan)] font-[var(--font-display)] text-lg font-semibold text-[var(--color-void)] shadow-[0_0_34px_-12px_rgba(56,226,255,0.9)]">
+        <div className="relative flex aspect-[4/3] items-center justify-center overflow-hidden border-b border-white/10 bg-gradient-to-br from-white/12 via-[rgba(56,226,255,0.12)] to-[rgba(142,255,243,0.06)]">
+          {imageSrc ? (
+            <img
+              src={imageSrc}
+              alt={name}
+              loading="lazy"
+              className="h-full w-full object-cover"
+              style={{ objectPosition: imagePosition }}
+              onError={(event) => {
+                event.currentTarget.style.display = "none";
+                const fallback = event.currentTarget.nextElementSibling as HTMLElement | null;
+                if (fallback) {
+                  fallback.style.display = "flex";
+                }
+              }}
+            />
+          ) : null}
+          <div
+            className="hidden h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-[var(--color-electric)] to-[var(--color-cyan)] font-[var(--font-display)] text-lg font-semibold text-[var(--color-void)] shadow-[0_0_34px_-12px_rgba(56,226,255,0.9)]"
+            style={{ display: imageSrc ? "none" : "flex" }}
+          >
             {initials(name)}
           </div>
         </div>
