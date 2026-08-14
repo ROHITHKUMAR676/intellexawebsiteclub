@@ -39,7 +39,10 @@ function PersonCard({ role, name, index }: { role: string; name: string; index: 
             <img
               src={imageSrc}
               alt={name}
+              width = {800}
+              height = {800}
               loading="lazy"
+              decoding="async"
               className="h-full w-full object-cover"
               style={{ objectPosition: imagePosition }}
               onError={(event) => {
