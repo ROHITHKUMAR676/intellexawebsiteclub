@@ -65,7 +65,10 @@ export const memberLinkedInLinks: Record<string, string> = {
   "Krishnapriya Bala": "https://www.linkedin.com/in/krishnapriyabala-j-s-986947331",
   "Megaasri": "https://www.linkedin.com/in/megaasrim06",
   "Siddharth": "https://www.linkedin.com/in/siddharth-ramaswamy-ramkumar-138166390",
-  "Sahana A": "https://www.linkedin.com/in/sahana-a-153806308/"
+  "Sahana A": "https://www.linkedin.com/in/sahana-a-153806308/",
+  "Varshanaa Arun": "https://www.linkedin.com/in/varshanaa-arun-270442396/",
+  "Katelyn": "https://www.linkedin.com/in/katelyn-/",
+  "Shasmeen": "https://www.linkedin.com/in/shasmeen-/",
 };
 
 export const aboutCards = [
@@ -269,6 +272,7 @@ export const executiveRoles = [
   { role: "Vice President", name: "Sarvesh Sivasankaran" },
   { role: "Technical Lead", name: "Darsshini P" },
   { role: "Secretary", name: "Andralyn Sweety" },
+  {role: "Operational Lead", name: "Shasmeen" },
 ];
 
 export const domainTeams = [
@@ -294,7 +298,7 @@ export const domainTeams = [
     domain: "Design",
     lead: "Sherin",
     coLead: "Tamilselvan",
-    members: ["Thiagarajan", "Eathisha", "Sahana A"],
+    members: ["Thiagarajan", "Eathisha", "Sahana A", "Katelyn", "Varshanaa Arun"],
   },
   {
     domain: "DSA",
@@ -324,7 +328,7 @@ export const domainTeams = [
     domain: "Media",
     lead: "RA Karthikha",
     coLead: "Darshan S",
-    members: ["Rahul M A", "Dhanush"],
+    members: ["Rahul M A", "Dhanush", "Varshanaa Arun"],
   },
   {
     domain: "PR",
