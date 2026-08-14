@@ -233,7 +233,7 @@ export const domainTeams = [
   {
     domain: "AI",
     lead: "Siddhartha B",
-    coLead: "Abbas",
+    coLead: "Mohamed Abbas S",
     members: [],
   },
   {
