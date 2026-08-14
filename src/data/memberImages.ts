@@ -1,5 +1,5 @@
 export const memberImagePathByName: Record<string, string> = {
-  Abbas: "/members/AbbasX.jpg",
+  "Mohamed Abbas S": "/members/AbbasX.jpg",
   "Afra Zeenath Fathima": "/members/afra.jpeg",
   "Andralyn Sweety": "/members/AndralynSweety.jpeg",
   "Gurunethra": "/members/Gurunethra.jpeg",
@@ -43,10 +43,13 @@ export const memberImagePathByName: Record<string, string> = {
   "Srisanjay": "/members/Srisanjay.jpg.jpeg",
   "Deepak Kumar": "/members/dee.jpeg",
   "Subin": "/members/subin.jpeg",
+  Nikitha: "/members/nikitha.jpeg",
+  "Rohit SS": "/members/rohit.jpeg",
+  "Dhanush": "/members/dhanush.jpeg",
 };
 
 export const memberImagePositionByName: Record<string, string> = {
-  Abbas: "center 18%",
+  "Mohamed Abbas S": "center 18%",
   "Bharathwaj S": "center 18%",
   "Darshan S": "center 58%",
   Eathisha: "center 50%",
@@ -72,13 +75,13 @@ export const memberImagePositionByName: Record<string, string> = {
   "Sahana A": "center 50%",
   "Shri Varshini": "center 50%",
   "Varsha": "center 50%",
-  "Vishnu Prasath P": "center 50%",
+  "Vishnu Prasath P": "center 60%",
   "Srisanjay": "center 50%",
   "Deepak Kumar": "center 50%",
-  "Thiagarajan": "center 50%",
+  "Thiagarajan": "center 60%",
   "Sherin": "center 50%",
   "Arya MR": "center 50%",
-  "Mahesh D": "center 50%",
+  "Mahesh D": "center 5%",
   "Tamilselvan": "center 40%",
   "Siddharth": "center 50%",
   Sangita: "center 16%",
@@ -86,7 +89,7 @@ export const memberImagePositionByName: Record<string, string> = {
   Sherwin: "center 14%",
   Harish: "center 14%",
   Subin: "center 14%",
-
+  "Rohit SS": "center 14%",
   "Siddhartha B": "center 18%",
   Vijayalakshmi: "center 16%",
   "Vineeth P": "center 58%",
