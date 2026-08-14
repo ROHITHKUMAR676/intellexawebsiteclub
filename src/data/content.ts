@@ -145,7 +145,7 @@ export const events = [
     date: "14 Aug 2025",
     tag: "AI session",
     description:
-      "An AI-focused session introducing language models and Ollama, helping students explore how AI assistants can be built and run locally without depending entirely on cloud infrastructure",
+      "An AI-focused session introducing language models and Ollama, helping students explore how AI assistants can be built and run locally without depending entirely on cloud infrastructure.",
   },
   {
     title: "Pixel Aura",
@@ -174,6 +174,48 @@ export const events = [
     tag: "Flagship contests",
     description:
       "Intellexa's flagship technical competition series featuring IoT Olympics, NETFIX, HackRush, Code and Conquer, and Shark Tank across hardware, networking, hackathon, backend, and product innovation tracks.",
+  },
+  {
+    title: "Webnayagan – The Rise of Agentic AI",
+    date: "25 Jun 2026",
+    tag: "AI session",
+    description:
+      "A session exploring the future of web development with Artificial Intelligence, introducing students to AI agents, agentic AI, and real-world applications of AI-powered web solutions.",
+  },
+  {
+    title: "Flutter First Flight",
+    date: "02 Jul 2026",
+    tag: "Mobile development",
+    description:
+      "A beginner-friendly Flutter session designed to kickstart the mobile app development journey, covering Flutter fundamentals, widget-based UI development, app layouts, and running applications on smartphones.",
+  },
+  {
+    title: "Cloudify Your ESP32",
+    date: "09 Jul 2026",
+    tag: "IoT session",
+    description:
+      "A hands-on session exploring how ESP32 can go beyond hardware by connecting with cloud services, with practical demonstrations of cloud integration and real-world applications.",
+  },
+  {
+    title: "CODE2PLAY",
+    date: "16 Jul 2026",
+    tag: "DSA session",
+    description:
+      "An interactive learning session that makes Data Structures and Algorithms practical through game development. Students explored arrays, stacks, queues, and other core concepts by building games.",
+  },
+  {
+    title: "Cyber Compass – Finding Your Way Into Cyber",
+    date: "30 Jul 2026",
+    tag: "Cybersecurity",
+    description:
+      "An introductory cybersecurity workshop helping students discover cybersecurity domains, career pathways, hands-on learning platforms, CTFs, certifications, and a structured roadmap to begin their journey.",
+  },
+  {
+    title: "SheBuilds Chennai Hackathon",
+    date: "TBA",
+    tag: "Hackathon",
+    description:
+      "A collaborative hackathon and innovation experience designed to encourage students to explore ideas, solve real-world problems, build solutions, and collaborate through technology.",
   },
 ];
 
