@@ -176,7 +176,7 @@ export const events = [
       "Intellexa's flagship technical competition series featuring IoT Olympics, NETFIX, HackRush, Code and Conquer, and Shark Tank across hardware, networking, hackathon, backend, and product innovation tracks.",
   },
   {
-    title: "Webnayagan – The Rise of Agentic AI",
+    title: "Web Nayagan – The Rise of Agentic AI",
     date: "25 Jun 2026",
     tag: "AI session",
     description:
