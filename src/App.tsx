@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import History from "./components/History";
+import JournalSection from "./components/JournalSection";
 import Events from "./components/Events";
 import Achievements from "./components/Achievements";
 import Blogs from "./components/Blogs";
