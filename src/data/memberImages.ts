@@ -1,5 +1,6 @@
 export const memberImagePathByName: Record<string, string> = {
   "Mohamed Abbas S": "/members/AbbasX.webp",
+  "Varshanaa Arun": "/members/Varshana.webp",
   "Afra Zeenath Fathima": "/members/afra.webp",
   "Andralyn Sweety": "/members/AndralynSweety.webp",
   "Gurunethra": "/members/Gurunethra.webp",
@@ -49,6 +50,7 @@ export const memberImagePathByName: Record<string, string> = {
 };
 
 export const memberImagePositionByName: Record<string, string> = {
+  "Varshanaa Arun": "center 18%",
   "Mohamed Abbas S": "center 18%",
   "Bharathwaj S": "center 18%",
   "Darshan S": "center 58%",
