@@ -4,6 +4,7 @@ export const memberImagePathByName: Record<string, string> = {
   "Andralyn Sweety": "/members/AndralynSweety.webp",
   "Gurunethra": "/members/Gurunethra.webp",
   "Sahana A": "/members/sahana.webp",
+  "Katelyn": "/members/katelyn.jpeg",
   "Darsshini P": "/members/techlead.webp",
   Shasmeen: "/members/shasmeen.jpeg",
   "Shri Varshini": "/members/shrivarshini.webp",
